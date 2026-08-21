@@ -1,0 +1,24 @@
+# --- Build artifacts (kept out of git) ---
+data/processed/      # generated train/test splits
+models/*.joblib      # trained models / matrices
+models/*.npz
+outputs/*.png        # generated plots (curated copies live in assets/)
+outputs/*.csv
+outputs/*.txt
+!outputs/.gitkeep
+
+# NOTE: data/ratings.csv and data/movies.csv ARE committed (~2.9 MB total)
+# so the repo is self-contained. assets/ is committed for the README.
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# --- OS ---
+.DS_Store
+.idea/
+.vscode/
